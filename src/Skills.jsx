@@ -13,7 +13,7 @@ const Skills = () => {
       viewport={{ margin: "-100px", once: true }}
       className='skills'
     >
-      <h2 className='heading1 '>Projects</h2>
+      <h2 className='heading1 '>Skills</h2>
       <h3 className='heading2'>Languages</h3>
       <div className="contents">
         <div className="flex">
@@ -40,12 +40,12 @@ const Skills = () => {
         <h3 className='heading3'>Libraries</h3>
         <div className="contents">
           <div className="flex">
-            <SemiDonutChart percentage={95} fill="#03B0FD" txt="HTML"/>
-            <SemiDonutChart percentage={60} fill="#03B0FD" txt="Numpy"/>
-            <SemiDonutChart percentage={50} fill="#03B0FD" txt="Pandas"/>
+            <SemiDonutChart percentage={95} fill="#03B0FD" txt="React"/>
+            <SemiDonutChart percentage={60} fill="#03B0FD" txt="Express.js"/>
+            <SemiDonutChart percentage={40} fill="#03B0FD" txt="Numpy"/>
           </div>
           <div className="flex">
-            <SemiDonutChart percentage={60} fill="#03B0FD" txt="Python"/>
+            <SemiDonutChart percentage={40} fill="#03B0FD" txt="Pandas"/>
           </div>
         </div>
       </motion.div>
