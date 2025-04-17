@@ -70,7 +70,7 @@ const Main = () => {
 
           <button
             onClick={() =>
-              window.open('https://drive.google.com/file/d/1a2-Y6i-NRJAc83NoTxm5P8CLsX13gM3b/view?usp=sharing', '_blank')
+              window.open('https://drive.google.com/file/d/1mWIwOJOhjFxdLpMh6465kvRUxe_xzTdk/view?usp=sharing', '_blank')
             }
             className="buttonb"
           >
