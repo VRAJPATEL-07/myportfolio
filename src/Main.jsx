@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
-import App from './App.jsx';
 import './main2.css';
 import codechef from './images/codechef1.png';
 import github from './images/github.png';
@@ -72,7 +70,7 @@ const Main = () => {
 
           <button
             onClick={() =>
-              window.open('https://drive.google.com/drive/u/0/my-drive', '_blank')
+              window.open('https://drive.google.com/file/d/1a2-Y6i-NRJAc83NoTxm5P8CLsX13gM3b/view?usp=sharing', '_blank')
             }
             className="buttonb"
           >
