@@ -14,12 +14,13 @@
 }
 
 .loading-wave {
-  width: 8%px;
-  height: 4%px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:24%;
+  margin-top: 24%;
+  flex-wrap: nowrap;
 }
 
 .loading-bar {
@@ -57,6 +58,30 @@
   }
 }
 
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 16px;
+    padding: 20px;
+  }
 
+  .loading-bar {
+    width: 15px;
+    height: 8px;
+    margin: 0 4px;
+  }
 
+  @keyframes loading-wave-animation {
+    0% {
+      height: 8px;
+    }
 
+    50% {
+      height: 30px;
+    }
+
+    100% {
+      height: 8px;
+    }
+  }
+}

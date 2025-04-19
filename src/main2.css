@@ -151,3 +151,63 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
   
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .left, .right {
+      width: 100%;
+      justify-content: center;
+      margin: 5px 0;
+    }
+  
+    .button {
+      width: auto;
+      font-size: 16px;
+      margin: 5px;
+    }
+  
+    .Main {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 100px;
+    }
+  
+    .main_left, .right_main {
+      width: 90%;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .names {
+      font-size: 40px;
+    }
+  
+    .i_am_a, .follow_me, .it_is_me {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .right_main img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
+  
+    .buttonb, .buttonc {
+      width: 130px;
+      height: 45px;
+      font-size: 14px;
+      margin: 10px;
+    }
+  
+    .logos img {
+      height: 24px;
+      width: 24px;
+      margin: 0 5px;
+    }
+  }
+  

@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: white;
 }
 
+/* Code block styling */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Add a general responsive wrapper if needed */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Media Query for smaller devices */
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 28px !important;
+  }
+
+  .about_me_left {
+    width: 90% !important;
+    margin-left: 5% !important;
+    font-size: 16px !important;
+  }
+
+  .loading-wave {
+    margin-top: 40%;
+  }
+
+  .button1 {
+    margin-left: 70% !important;
+    width: 45px;
+    height: 45px;
+  }
+
+  .button1:hover {
+    width: 120px;
+  }
+
+  .button1:hover::before {
+    font-size: 12px;
+  }
 }

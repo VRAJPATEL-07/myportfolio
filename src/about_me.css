@@ -1,3 +1,4 @@
+/* Heading Styles */
 .heading {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -6,6 +7,7 @@
     margin-bottom: 20px; /* added spacing below the heading */
 }
 
+/* About Me Left Section */
 .about_me_left {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -16,9 +18,47 @@
     line-height: 1.6; /* better line spacing */
 }
 
-
-
+/* About Me Container */
 .about_me {
     text-align: center;
     margin: 16% auto -5% auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 850px) {
+    /* Heading */
+    .heading {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+
+    /* About Me Left Section */
+    .about_me_left {
+        width: 80%; /* Increase width to 80% for smaller screens */
+        margin-left: 10%; /* Center the text */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    /* About Me Container */
+    .about_me {
+        margin: 10% auto 0 auto; /* Adjust top margin for smaller screens */
+    }
+}
+
+@media screen and (max-width: 569px) {
+    /* Heading */
+    .heading {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    /* About Me Left Section */
+    .about_me_left {
+        width: 90%; /* Ensure the left section takes more width */
+        margin-left: 5%; /* Center text even more */
+        font-size: 16px; /* Reduce font size further */
+    }
+
+    /* About Me Container */
+    .about_me {
+        margin: 5% auto 0 auto; /* Adjust margin further */
+    }
 }

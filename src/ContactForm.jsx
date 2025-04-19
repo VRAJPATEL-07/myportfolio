@@ -59,7 +59,7 @@ const ContactForm = () => {
             <li className="list-item">
               <FontAwesomeIcon icon={faEnvelope} />
               <span className="contact-text gmail">
-                <a href="vrajpatel21055@gmail.com" title="Send me an email">
+                <a href="mailto:vrajpatel21055@gmail.com" title="Send me an email">
                   vrajpatel21055@gmail.com
                 </a>
               </span>

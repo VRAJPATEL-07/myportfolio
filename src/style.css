@@ -107,3 +107,44 @@ html {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    padding: 0 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .grid .card {
+    width: 90%; /* Make cards take up most of the screen width */
+    margin-bottom: 2rem; /* Adjust vertical spacing */
+  }
+
+  .grid .card__header {
+    font-size: 2.5rem; /* Smaller header size */
+  }
+
+  .grid .card__text {
+    font-size: 1.4rem; /* Slightly smaller text */
+  }
+
+  .grid .card__btn {
+    font-size: 1.8rem; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid .card {
+    width: 100%; /* Cards take up the full width */
+  }
+
+  .grid .card__header {
+    font-size: 2rem; /* Further adjust header size */
+  }
+
+  .grid .card__text {
+    font-size: 1.3rem; /* Further adjust text size */
+  }
+
+  .grid .card__btn {
+    font-size: 1.6rem; /* Further adjust button font size */
+  }
+}

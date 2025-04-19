@@ -1,17 +1,19 @@
+/* Heading Styles */
 .heading1 {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 35px;
     margin: 10% 0 3% 0;
-    
 }
 
+/* Logo */
 img.why_logo {
     width: 70px;
     height: 70px;
 }
 
+/* Text Styles */
 .mid_text {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -28,6 +30,7 @@ img.why_logo {
     margin: 2px 0;
 }
 
+/* Box Styling */
 .box {
     background-color: #1E2635;
     width: 100%; /* Adjusted to 100% for full width within .modiv */
@@ -38,6 +41,7 @@ img.why_logo {
     padding-top: 20px; /* Keep the margin for spacing */
 }
 
+/* New Layout Container */
 .neww {
     display: flex;
     height: 250px;
@@ -55,9 +59,59 @@ img.why_logo {
     height: 100%; /* Fill the available height within .modiv */
 }
 
-.down_gap{
-    margin-bottom:3%;
+/* Spacing Adjustments */
+.down_gap {
+    margin-bottom: 3%;
 }
-.up_gap{
-    margin-top:10%;
+.up_gap {
+    margin-top: 10%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 850px) {
+    .heading1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .mid_text {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    .neww {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto;
+    }
+
+    .modiv {
+        width: 100%; /* Make each box take full width */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .box {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove max-width */
+    }
+
+    .main_text_why {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .heading1 {
+        font-size: 24px; /* Adjust font size further for very small screens */
+    }
+
+    .mid_text {
+        font-size: 22px; /* Adjust font size further for very small screens */
+    }
+
+    .box {
+        width: 100%; /* Ensure full width */
+        max-width: none; /* Remove max-width */
+    }
+
+    .main_text_why {
+        font-size: 13px; /* Adjust font size for very small screens */
+    }
 }

@@ -1,66 +1,85 @@
 .button1 {
   margin-left: 85%;
   margin-bottom: 5%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .button1:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .button1:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .button1::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  .button1:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button1:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button1:hover .svgIcon {
+  transform: translateY(-200%);
+}
+
+.button1::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-size: 0px;
+  transition-duration: 0.3s;
+}
+
+.button1:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+
+/* Fixed selector and made sure it’s not nested incorrectly */
+.back-to-top {
+  position: fixed;
+  right: 10%;
+  bottom: 5%;
+  z-index: 1000;
+}
+
+/* ✅ Responsive: for smaller screens */
+@media (max-width: 768px) {
+  .button1 {
+    margin-left: 70%;
+    width: 45px;
+    height: 45px;
   }
 
-  .back-to-top{
-    .back-to-top {
-      margin-left: 80%;  /* Distance from the right side of the viewport */
-      z-index: 1000; /* Ensure it appears above other content */
-    }
+  .button1:hover {
+    width: 120px;
   }
-  
+
+  .button1:hover::before {
+    font-size: 11px;
+  }
+
+  .back-to-top {
+    right: 5%;
+    bottom: 5%;
+  }
+}

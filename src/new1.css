@@ -16,3 +16,16 @@ body {
     min-height: 100vh;
   }
  
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      flex-direction: column;
+      width: 90vw;
+      padding: 20px;
+      min-height: auto;
+    }
+  }
+  
